@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/singhamritpal49/Notes-app/issues"
   },
-  "homepage": "https://github.com/singhamritpal49/Notes-app#readme"
+  "homepage": "https://github.com/singhamritpal49/Notes-app#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "nodemon": "^2.0.2",
+    "validator": "^12.1.0"
+  }
 }

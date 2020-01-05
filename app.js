@@ -1,6 +1,9 @@
+const chalk = require('chalk');
+
 const getNotes = require('./notes')
 
-const note = getNotes()
+// const note = getNotes()
 
+const greenMsg = chalk.red.bold.inverse('Error!')
 
-console.log(note)
+console.log(greenMsg);
