@@ -11,7 +11,7 @@ const addNote = function (title, body) {
     const duplicateNotes = notes.filter(note => {
         return note.title === title
     })
-    const duplicateNote = notes.find((note) =>  note.title === title) 
+    const duplicateNote = notes.find((note) => note.title === title)
 
 
     if (!duplicateNote) {
@@ -59,19 +59,19 @@ const removeNote = function (title) {
 
 const listNote = () => {
     const notes = loadNodes()
-    if (!notes.length){ console.log("NO notes Found")}
+    if (!notes.length) { console.log("NO notes Found") }
     const view = notes.forEach(note => {
-         console.log(note.title)
+        console.log(note.title)
     });
-    
-    
+
+
 }
 
 const read = (title) => {
     const notes = loadNodes()
     notes.find(note => {
         if (note.title === title) {
-            console.log(chalk.green.inverse('Title: '+ note.title));
+            console.log(chalk.green.inverse('Title: ' + note.title));
             console.log(chalk.green("Body: " + note.body));
         } else {
             console.log("No Found Match That Title")
